@@ -1,0 +1,875 @@
+@keyframes color {
+    to {
+        color: #006bcc;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #71bfff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+h2 {
+    font-size: 25px;
+    line-height: 30px;
+    animation: color 2s ease 0s infinite alternate;
+    display: inline;
+    background-repeat: 50%;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.left {
+    max-width: 580px;
+    padding: 98px 40px 90px;
+    background-color: #e1f4ff;
+    box-sizing: border-box;
+}
+
+.left img {
+    position: absolute;
+    right: 100px;
+    bottom: 83px;
+}
+
+.left .grades {
+    max-width: 500px;
+    height: 272px;
+    background-color: #fff;
+    margin: 30px 0 58px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.left .grades::before {
+    display: block;
+    content: "";
+    width: 400px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #d1e3f2;
+    position: relative;
+    top: 51px;
+    left: 50px;
+}
+
+.left .grades .choice__of__grades {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.left .grades .choice__of__grades label {
+    font-size: 18px;
+}
+
+.left .grades .choice__of__grades label:hover {
+    color: #006bcc;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.left .grades .choice__of__grades .choice__of__grade input:checked ~ label::before {
+    display: none;
+    content: "";
+    width: 14px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: #006bcc;
+    position: relative;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(1) input:checked ~ label::before {
+    top: -64px;
+    left: -7px;
+    display: block;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(2) input:checked ~ label::before {
+    top: -64px;
+    left: 21px;
+    display: block;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(3) input:checked ~ label::before {
+    top: -64px;
+    left: 45px;
+    display: block;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(1) input:checked ~ .junior__words {
+    display: block;
+    position: absolute;
+    top: 77px;
+    right: 125px;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(2) input:checked ~ .middle__words {
+    display: block;
+    position: absolute;
+    top: 97px;
+    right: 100px;
+}
+
+.left .grades .choice__of__grades .choice__of__grade:nth-child(3) input:checked ~ .senior__words {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 80px;
+}
+
+
+
+.left .grades p {
+    margin: 30px 76px 42px;
+}
+
+.left .grades p::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 12px;
+    background-image: url(../img/Group\ 5.png);
+    position: relative;
+    left: -31px;
+    top: 16px;
+}
+
+
+
+
+
+
+
+.junior__words,
+.middle__words,
+.senior__words {
+    display: none;
+    height: 180px;
+    width: 380px;
+}
+
+.junior__words span,
+.middle__words span,
+.senior__words span {
+    display: inline-block;
+    background-color: #006bcc;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    font-weight: normal;
+}
+
+.left .junior__words .junior__word-1 {
+    font-size: 21px;
+    top: 23px;
+    left: 115px;
+    padding: 11px 16px;
+}
+
+.left .junior__words .junior__word-2 {
+    font-size: 16px;
+    top: 27px;
+    left: 214px;
+    padding: 7px 11px;
+}
+
+.left .junior__words .junior__word-3 {
+    font-size: 12px;
+    top: 14px;
+    left: 277px;
+    padding: 4px 7px;
+}
+
+.left .junior__words .junior__word-4 {
+    font-size: 16px;
+    top: 83px;
+    left: 71px;
+    padding: 5px 11px 6px 9px;
+}
+
+.left .junior__words .junior__word-5 {
+    font-size: 21px;
+    top: 75px;
+    left: 163px;
+    padding: 11px 16px;
+}
+
+.left .junior__words .junior__word-6 {
+    font-size: 18px;
+    top: 52px;
+    left: 275px;
+    padding: 9px 16px;
+}
+
+.left .junior__words .junior__word-7 {
+    font-size: 16px;
+    top: 129px;
+    left: 106px;
+    padding: 7px 9px;
+}
+
+.left .junior__words .junior__word-8 {
+    font-size: 20px;
+    top: 129px;
+    left: 180px;
+    padding: 9px 13px;
+}
+
+.left .junior__words .junior__word-9 {
+    font-size: 11px;
+    top: 99px;
+    left: 273px;
+    padding: 2px 9px;
+}
+
+.left .junior__words .junior__word-10 {
+    font-size: 16px;
+    top: 99px;
+    left: 318px;
+    padding: 6px 10px;
+}
+
+.left .junior__words .junior__word-11   {
+    font-size: 12px;
+    top: 133px;
+    left: 257px;
+    padding: 5px 8px;
+}
+
+
+
+
+
+.left .middle__words .middle__word-1 {
+    font-size: 21px;
+    top: 30px;
+    left: 115px;
+    padding: 11px 16px;
+}
+
+.left .middle__words .middle__word-2 {
+    font-size: 16px;
+    top: 38px;
+    left: 205px;
+    padding: 7px 11px;
+}
+
+.left .middle__words .middle__word-3 {
+    font-size: 12px;
+    top: 4px;
+    left: 303px;
+    padding: 4px 7px;
+}
+
+.left .middle__words .middle__word-4 {
+    font-size: 16px;
+    top: 75px;
+    left: 77px;
+    padding: 5px 11px 6px 9px;
+}
+
+.left .middle__words .middle__word-5 {
+    font-size: 21px;
+    top: 75px;
+    left: 163px;
+    padding: 11px 16px;
+}
+
+.left .middle__words .middle__word-6 {
+    font-size: 18px;
+    top: 36px;
+    left: 257px;
+    padding: 9px 16px;
+}
+
+.left .middle__words .middle__word-7 {
+    font-size: 16px;
+    top: 109px;
+    left: 99px;
+    padding: 10px 9px;
+}
+
+.left .middle__words .middle__word-8 {
+    font-size: 20px;
+    top: 120px;
+    left: 163px;
+    padding: 9px 13px;
+}
+
+.left .middle__words .middle__word-9 {
+    font-size: 11px;
+    top: 120px;
+    left: 299px;
+    padding: 2px 5px;
+}
+
+.left .middle__words .middle__word-10 {
+    font-size: 16px;
+    top: 77px;
+    left: 266px;
+    padding: 10px 10px;
+}
+
+.left .middle__words .middle__word-11   {
+    font-size: 12px;
+    top: 78px;
+    left: 317px;
+    padding: 5px 13px;
+}
+
+.left .middle__words .middle__word-12 {
+    font-size: 14px;
+    top: 4px;
+    left: 261px;
+    padding: 4px 6px;
+}
+
+.left .middle__words .middle__word-13 {
+    font-size: 9px;
+    top: 14px;
+    left: 56px;
+    padding: 2px 4px;
+}
+
+.left .middle__words .middle__word-14 {
+    font-size: 18px;
+    top: 120px;
+    left: 235px;
+    padding: 6px 3px;
+}
+
+.left .middle__words .middle__word-15 {
+    font-size: 14px;
+    top: 111px;
+    left: 326px;
+    padding: 4px 6px;
+}
+
+.left .middle__words .middle__word-16 {
+    font-size: 16px;
+    top: 0px;
+    left: 204px;
+    padding: 8px 10px;
+}
+
+.left .middle__words .middle__word-17 {
+    font-size: 8px;
+    top: 0px;
+    left: 160px;
+    padding: 4px 9px;
+}
+
+.left .middle__words .middle__word-18 {
+    font-size: 18px;
+    top: 42px;
+    left: 44px;
+    padding: 5px 12px;
+}
+
+.left .middle__words .middle__word-19 {
+    font-size: 14px;
+    top: 76px;
+    left: 33px;
+    padding: 4px 6px;
+}
+
+.left .middle__words .middle__word-20 {
+    font-size: 14px;
+    top: 11px;
+    left: 76px;
+    padding: 4px 6px;
+}
+
+.left .middle__words .middle__word-21 {
+    font-size: 16px;
+    top: 110px;
+    left: 51px;
+    padding: 5px 9px;
+}
+
+.left .middle__words .middle__word-22 {
+    font-size: 12px;
+    top: -1px;
+    left: 117px;
+    padding: 4px 9px;
+}
+
+
+
+
+
+.left .senior__words .senior__word-1 {
+    font-size: 21px;
+    top: 40px;
+    left: 129px;
+    padding: 6px 9px;
+}
+
+.left .senior__words .senior__word-2 {
+    font-size: 16px;
+    top: 42px;
+    left: 205px;
+    padding: 5px 10px;
+}
+
+.left .senior__words .senior__word-3 {
+    font-size: 12px;
+    top: 16px;
+    left: 283px;
+    padding: 1px 2px;
+}
+
+.left .senior__words .senior__word-4 {
+    font-size: 16px;
+    top: 75px;
+    left: 82px;
+    padding: 4px 8px;
+}
+
+.left .senior__words .senior__word-5 {
+    font-size: 21px;
+    top: 75px;
+    left: 163px;
+    padding: 7px 11px;
+}
+
+.left .senior__words .senior__word-6 {
+    font-size: 18px;
+    top: 43px;
+    left: 257px;
+    padding: 5px 7px;
+}
+
+.left .senior__words .senior__word-7 {
+    font-size: 16px;
+    top: 105px;
+    left: 98px;
+    padding: 3px 10px;
+}
+
+.left .senior__words .senior__word-8 {
+    font-size: 20px;
+    top: 112px;
+    left: 163px;
+    padding: 5px 5px;
+}
+
+.left .senior__words .senior__word-9 {
+    font-size: 11px;
+    top: 146px;
+    left: 269px;
+    padding: 2px 5px;
+}
+
+.left .senior__words .senior__word-10 {
+    font-size: 16px;
+    top: 77px;
+    left: 256px;
+    padding: 6px 6px;
+}
+
+.left .senior__words .senior__word-11 {
+    font-size: 12px;
+    top: 113px;
+    left: 284px;
+    padding: 5px 13px;
+}
+
+.left .senior__words .senior__word-12 {
+    font-size: 14px;
+    top: 11px;
+    left: 245px;
+    padding: 4px 4px;
+}
+
+.left .senior__words .senior__word-13 {
+    font-size: 9px;
+    top: 18px;
+    left: 56px;
+    padding: 0px 3px;
+}
+
+.left .senior__words .senior__word-14 {
+    font-size: 18px;
+    top: 114px;
+    left: 219px;
+    padding: 4px 3px;
+}
+
+.left .senior__words .senior__word-15 {
+    font-size: 14px;
+    top: 145px;
+    left: 296px;
+    padding: 0px 1px;
+}
+
+.left .senior__words .senior__word-16 {
+    font-size: 16px;
+    top: 6px;
+    left: 196px;
+    padding: 6px 6px;
+}
+
+.left .senior__words .senior__word-17 {
+    font-size: 8px;
+    top: 17px;
+    left: 312px;
+    padding: 1px 1px;
+}
+
+.left .senior__words .senior__word-18 {
+    font-size: 18px;
+    top: 42px;
+    left: 66px;
+    padding: 5px 8px;
+}
+
+.left .senior__words .senior__word-19 {
+    font-size: 14px;
+    top: 133px;
+    left: 51px;
+    padding: 1px 6px;
+}
+
+.left .senior__words .senior__word-20 {
+    font-size: 14px;
+    top: 11px;
+    left: 76px;
+    padding: 4px 6px;
+}
+
+.left .senior__words .senior__word-21 {
+    font-size: 16px;
+    top: 105px;
+    left: 54px;
+    padding: 2px 6px;
+}
+
+.left .senior__words .senior__word-22 {
+    font-size: 12px;
+    top: 106px;
+    left: 29px;
+    padding: 1px 2px;
+}
+
+.left .senior__words .senior__word-23 {
+    font-size: 12px;
+    top: 134px;
+    left: 97px;
+    padding: 4px 6px;
+}
+
+.left .senior__words .senior__word-24 {
+    font-size: 12px;
+    top: 78px;
+    left: 300px;
+    padding: 5px 9px;
+}
+
+.left .senior__words .senior__word-25 {
+    font-size: 12px;
+    top: 145px;
+    left: 152px;
+    padding: 4px 6px;
+}
+
+.left .senior__words .senior__word-26 {
+    font-size: 12px;
+    top: 43px;
+    left: 22px;
+    padding: 4px 6px;
+}
+
+.left .senior__words .senior__word-27 {
+    font-size: 14px;
+    top: 75px;
+    left: 12px;
+    padding: 4px 11px;
+}
+
+.left .senior__words .senior__word-28 {
+    font-size: 12px;
+    top: 9px;
+    left: 116px;
+    padding: 4px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+.left .creature {
+    display: flex;
+}
+
+.left .creature .choice__of {
+    width: 240px;
+    height: 90px;
+    background-color: #fff;
+    margin: 30px 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left .creature .choice__of label {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+}
+
+.left .creature .choice__of label:hover {
+    transform: scale(1.4);
+}
+
+.left .creature .choice__of input:checked + label {
+    border: 3px solid #006bcc;
+}
+
+.left .creature .choice__of input:checked + label::before {
+    width: 5px;
+    height: 5px;
+    background-color: #006bcc;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    left: 7%;
+    top: 7%;
+}
+
+.left .creature .choice__of .body__first input:checked ~ .body__1 {
+    width: 200px;
+    height: 280px;
+    background-image: url(../img/Group\ 79.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 330px;
+    left: 787px;
+}
+
+.left .creature .choice__of .body__second input:checked ~ .body__2 {
+    width: 200px;
+    height: 280px;
+    background-image: url(../img/Group\ 80.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 330px;
+    left: 787px;
+}
+
+.left .creature .choice__of .body__third input:checked ~ .body__3 {
+    width: 200px;
+    height: 280px;
+    background-image: url(../img/Group\ 81.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 330px;
+    left: 806px;
+}
+
+.left .creature .choice__of .face__first input:checked ~ .face__1 {
+    background-image: url(../img/Group\ 83.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 100px;
+    position: absolute;
+    bottom: 248px;
+    left: 842px;
+}
+
+.left .creature .choice__of .face__second input:checked ~ .face__2 {
+    background-image: url(../img/Group\ 86.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 100px;
+    position: absolute;
+    bottom: 248px;
+    left: 839px;
+}
+
+.left .creature .choice__of .face__third input:checked ~ .face__3 {
+    background-image: url(../img/Group\ 87.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 100px;
+    position: absolute;
+    bottom: 248px;
+    left: 842px;
+}
+
+.left .creature .choice__of__body label {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.left .creature .choice__of__body .body__first label {
+    background-image: url(../img/Group\ 79.png);
+    background-position: 8px 10px;
+}
+
+.left .creature .choice__of__body .body__second label {
+    background-image: url(../img/Group\ 80.png);
+    background-position: 6px 10px;
+}
+
+.left .creature .choice__of__body .body__third label {
+    background-image: url(../img/Group\ 81.png);
+    background-position: 11px 10px;
+}
+
+.left .creature .choice__of__face label {
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.left .creature .choice__of__face .face__first label {
+    background-image: url(../img/Group\ 83.png);
+    background-position: 8px 21px;
+}
+
+.left .creature .choice__of__face .face__second label {
+    background-image: url(../img/Group\ 86.png);
+    background-position: 8px 21px;
+}
+
+.left .creature .choice__of__face .face__third label {
+    background-image: url(../img/Group\ 87.png);
+    background-position: 8px 17px;
+}
+
+
+
+
+
+
+
+
+
+.right {
+    width: 580px;
+    background-color: #fff;
+    height: 728px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1200px) {
+    main {
+        display: block;
+        position: static;
+    }
+    section {
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 580px;
+    }
+    .right {
+        width: 580px;
+        background-color: #fff;
+    }
+    .left img {
+    position: relative;
+    left: -439px;
+    bottom: -730px;
+    }
+    .left .creature .choice__of .body__first input:checked ~ .body__1 {
+        top: 1051px;
+        left: 202px;
+    }
+    .left .creature .choice__of .body__second input:checked ~ .body__2 {
+        top: 1051px;
+        left: 202px;
+    }
+    .left .creature .choice__of .body__third input:checked ~ .body__3 {
+        top: 1051px;
+        left: 223px;
+    }
+    .left .creature .choice__of .face__first input:checked ~ .face__1 {
+        bottom: 263px;
+        left: 259px;
+    }
+    .left .creature .choice__of .face__second input:checked ~ .face__2 {
+        bottom: 263px;
+        left: 259px;
+    }
+    .left .creature .choice__of .face__third input:checked ~ .face__3 {
+        bottom: 263px;
+        left: 259px;
+    }
+    .left .grades .choice__of__grades .choice__of__grade:nth-child(1) input:checked ~ .junior__words {
+        top: 802px;
+        right: 130px;
+    }
+    .left .grades .choice__of__grades .choice__of__grade:nth-child(2) input:checked ~ .middle__words {
+        top: 817px;
+        right: 110px;
+    }
+    .left .grades .choice__of__grades .choice__of__grade:nth-child(3) input:checked ~ .senior__words {
+        top: 817px;
+        right: 100px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}
